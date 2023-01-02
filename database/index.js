@@ -1,6 +1,6 @@
 import { Sequelize } from "sequelize";
 
-export const sequelize = new Sequelize("students_db", "root","qazplm12345", {
-    host: "localhost",
-    dialect: "mysql",
+export const sequelize = new Sequelize("todolist_db", "root", "qazplm12345", {
+  host: "localhost",
+  dialect: "mysql",
 });
