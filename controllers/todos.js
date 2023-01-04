@@ -54,7 +54,6 @@ export const getTasks_ToDoById = async (req, res) => {
   const id = parseInt(req.params.id);
   try {
     const toDo = await toDoList.findByPk(id);
-    // ! student = student === null
     if (!toDo) {
       throw new Error("toDo not found");
     }
