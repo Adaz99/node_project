@@ -56,7 +56,7 @@ export const getTasks_ToDoById = async (req, res) => {
     const toDo = await toDoList.findByPk(id);
     // ! student = student === null
     if (!toDo) {
-      throw new Error("Student not found");
+      throw new Error("toDo not found");
     }
     res.send(toDo);
   } catch (error) {
